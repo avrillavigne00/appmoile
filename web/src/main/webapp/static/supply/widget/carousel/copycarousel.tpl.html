@@ -1,0 +1,14 @@
+<ul id="my-carousel">
+	<%_.each(ADList,function(img){%>
+	<li>
+	<a href="#productDetail/<%=img.get('pId')%>" data-pid="<%=img.get('pId')%>" data-ignore="push">
+		<img src="<%=Common.baseUrl+img.get('imageUrl')%>" alt="" width="<%=Common.screenWidth%>">
+	</a>
+	</li>
+	<%})%>
+	<!-- <li>
+		<img src="../../img/blue-bg.jpeg" alt="">
+	</li>
+	<li><img src="../../img/green-bg.jpeg" alt=""></li>
+	<li><img src="../../img/red-bg.jpeg" alt=""></li> -->
+</ul>

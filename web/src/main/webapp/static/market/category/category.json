@@ -1,0 +1,36 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "办公用品1",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "category_name": "办公用品2",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+<div id='carouselswipe' style='max-width:1024px;margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+  	<%_.each(ADList,function(img){%>
+    <div>
+		<a href="#productDetail/<%=img.get('cproductid')%>" data-pid="<%=img.get('cproductid')%>" data-ignore="push">
+    <!--636版本用vimageurl，636版本用imageurl-->
+    <% if(img.get('vimageurl')){%>
+		  <img src="<%=Common.baseUrl+"/"+img.get('vimageurl')%>" alt="" width="<%=Common.screenWidth%>" height="<%=Common.carouselHeight%>">
+    <%}%>
+    <%if(!img.get('vimageurl')){%>
+       <img src="<%=Common.baseUrl+"/"+'ecp/mobile/img/defaultimg.jpg'%>" alt="" width="<%=Common.screenWidth%>" height="<%=Common.carouselHeight%>">
+    <%}%>
+    
+	</a>
+    </div>   
+    <%})%> 
+  </div>
+  <div class="carousel-indicator">
+  	<% if(ADList.length>1){%>
+    <%_.each(ADList,function(img){%>
+  	<span></span>  	
+  	<%})}%> 
+  </div>
+</div>

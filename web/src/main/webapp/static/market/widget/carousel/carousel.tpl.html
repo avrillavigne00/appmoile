@@ -1,0 +1,17 @@
+<div id='carouselswipe' style='max-width:1024px;margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+  	<%_.each(ADList,function(img){%>
+    <div>
+		<a href="#productDetail/<%=img.get('productid')%>" data-pid="<%=img.get('productid')%>" data-ignore="push">
+		  <img src="<%=img.get('imageurl')%>" alt="" width="<%=Common.screenWidth%>" height="<%=Common.carouselHeight%>">
+	</a>
+    </div>   
+    <%})%> 
+  </div>
+  <div class="carousel-indicator">
+  	<% if(ADList.length>1){%>
+    <%_.each(ADList,function(img){%>
+  	<span></span>  	
+  	<%})}%> 
+  </div>
+</div>

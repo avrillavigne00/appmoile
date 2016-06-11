@@ -1,0 +1,12 @@
+<div id='carouselswipe' style='max-width:1024px;margin:0 auto' class='swipe'>
+    <div class='swipe-wrap' >
+        <div v-for="picture in pictures">
+            <a data-ignore="push" v-bind:href="'#">
+                <img v-bind:src="picture.imageurl" alt="" width={{screenWidth}} style="height:{{$parent.imgheight}}">
+            </a>
+        </div>
+    </div>
+    <div class="carousel-indicator" >
+        <span v-for="picture in pictures">{{picture.imgurl}}</span>
+    </div>
+</div>

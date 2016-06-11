@@ -1,0 +1,18 @@
+<div id="category">
+    <div class="category-lv-1">
+        <ul>
+            <li class="xs-row" industryid="0" taped="false" :id="'mc_' + item.category_id"
+                v-for="item in items" v-on:click="categoryClick(item.category_id, $event)">{{item.category_name}}</li>
+        </ul>
+    </div>
+    <div class="category-lv-2">
+        <ul>
+            <li v-for="subitem in subitems">
+                <a href="#goodslist/goodslistview?category_id={{subitem.category_id}}" data-ignore="push">
+                    <img src="../../goodsimg/{{subitem.main_picture}}" alt="">
+                    <span>{{subitem.category_name}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

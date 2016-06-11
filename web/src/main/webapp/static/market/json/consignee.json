@@ -1,0 +1,16 @@
+[{
+  "id": 1,
+  "person_name": "采购员1",
+  "phone_number": "18888888888",
+  "county_code": "110102",
+  "county_desc": "北京市 北京市 西城区",
+  "detail_address": "用友软件园"
+},
+  {
+    "id": 2,
+    "person_name": "采购员2",
+    "phone_number": "16666666666",
+    "county_code": "110101",
+    "county_desc": "北京市 北京市 东城区",
+    "detail_address": "王府井大街"
+  }]
