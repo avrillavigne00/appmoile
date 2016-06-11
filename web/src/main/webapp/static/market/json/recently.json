@@ -1,0 +1,32 @@
+[
+  {
+    "ware_id": "1",
+    "title": "牛奶",
+    "price": "400",
+    "main_picture": "1.jpg"
+  },
+  {
+    "ware_id": "2",
+    "title": "电风扇",
+    "price": "1200",
+    "main_picture": "2.jpg"
+  },
+  {
+    "ware_id": "3",
+    "title": "手表",
+    "price": "720",
+    "main_picture": "3.jpg"
+  },
+  {
+    "ware_id": "4",
+    "title": "茱莉蔻美白护肤",
+    "price": "780",
+    "main_picture": "4.jpg"
+  },
+  {
+    "ware_id": "5",
+    "title": "平板电脑",
+    "price": "10",
+    "main_picture": "5.jpg"
+  }
+]

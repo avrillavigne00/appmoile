@@ -1,0 +1,703 @@
+html{
+    font-size: 32px;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 375px){
+    html {
+        font-size: 37.5px;
+    }
+}
+@media only screen and (min-width: 414px){
+    html {
+        font-size: 41.4px;
+    }
+}
+body{
+	font-family: Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    font-size: 12px;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.main-nav-ctn div{
+	min-height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+.bg-trans{
+    background-color: transparent;
+}
+.bg-white{
+    background-color: #FFF;
+}
+.hidden{
+    display: none;
+}
+.bar-nav ~ .content{
+    padding-bottom:44px;
+}
+.bar-nav.hidden ~ .content{
+    padding-top:0;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.p-xs{
+	padding:2px;
+}
+.p-sm{
+	padding:5px;
+}
+.p-t-sm{
+	padding-top:5px;
+}
+.p-l-sm{
+	padding-left:5px;
+}
+.p-md{
+	padding:10px;
+}
+.p-l-md{
+	padding-left:10px;
+}
+.m-l-md{
+	margin-left:10px;
+}
+.m-b-sm{
+    margin-bottom: 5px;
+}
+.cl-danger{
+	color:orange;
+}
+.cl-info{
+	color:#45CEFB;
+}
+.m-t-md{
+    margin-top:10px;
+}
+.cl-price{
+	color:red;
+}
+.text-bolder{
+	font-weight: bolder;
+}
+.text-lighter{
+	font-weight: lighter;
+}
+.no-navigate{
+	padding: 15px 11px 11px 15px;
+}
+input[type="text"].input-sm{
+	height: 30px;
+    padding: 5px 10px; 
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn.btn-lg{
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+/*报价页面*/
+.quotating-info label{
+	font-size: 12px;
+	line-height: 30px;
+}
+.quotating-info .input-sm{
+	width:50%;
+}
+.nav-quotating{
+	margin-right: 5px;
+    line-height: 48px;
+}
+/*报价页面end*/
+
+/*fontawesome checkbox*/
+.checkbox {
+    padding-left: 20px;
+    position: relative;
+    margin: 0;
+}
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+    line-height: 25px;
+}
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top:3px;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+}
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+.checkbox.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::after,
+.checkbox-danger input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::before,
+.checkbox-info input[type="radio"]:checked + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+.checkbox-info input[type="checkbox"]:checked + label::after,
+.checkbox-info input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::after,
+.checkbox-warning input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+.checkbox-success input[type="checkbox"]:checked + label::after,
+.checkbox-success input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.radio {
+    padding-left: 20px;
+}
+.radio label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+}
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+.radio.radio-inline {
+    margin-top: 0;
+}
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: #337ab7;
+}
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #337ab7;
+}
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #337ab7;
+}
+
+.radio-danger input[type="radio"] + label::after {
+    background-color: #d9534f;
+}
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: #d9534f;
+}
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de;
+}
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de;
+}
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: #f0ad4e;
+}
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: #f0ad4e;
+}
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: #5cb85c;
+}
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: #5cb85c;
+}
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: #5cb85c;
+}
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+    color: #fff;
+}
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+    color: #fff;
+}
+/*fontawesome checkbox*/
+
+/*首页 透明的头部*/
+.bar-trans{
+
+}
+.floor {
+    background-color: #FFF;
+}
+.floor-ctn ul {
+    padding: 0;    
+    border-top: solid 1px #e1e1e1;
+}
+.floor-ctn ul li {
+    width: 33.333333%;
+    float: left;
+    list-style: none;
+    text-align: center;
+    height: 100px;
+    border-right: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+    background-color: #FFF;
+}
+.floor-title {
+    border-left: solid 3px #ff3c25;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.floor-title a{
+	color: #666;
+}
+.floor-title .icon {
+}
+.floor-item-title {
+    font-size: 16px;
+}
+/*快速导航*/
+.shortcut-icon {
+    margin: 12px 0;
+}
+.sc-ctn {
+    width: 20%;
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+    float:left;
+}
+.sc-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    margin: 0 auto;
+}
+.sc-icon.supermarket {
+    background-color: #fd5e5e;
+}
+.sc-icon.puprice {
+    background-color: #ffab33;
+}
+.sc-icon.bid-tender {
+    background-color: #33d198;
+}
+.sc-icon.ol-price {
+    background-color: #4ca4fe;
+}
+.sc-icon.my-order{
+	background-color: #7067e2;
+}
+.sc-icon i{
+	font-size: 22px;
+    color: #FFF;
+    line-height: 38px;
+}
+.sc-title {
+    color: #666;
+}
+
+.bar-tab .tab-item.active, .bar-tab .tab-item:active{
+	color:#ff3c25;
+}
+/*首页隐藏头部*/
+.bar-tras{
+    background-color:transparent;
+    box-shadow:none;
+}
+.bar-tras ~ .content {
+    padding-top: 0;
+}
+header.bar .btn-link{
+    color: #696969;
+    font-size: 12px;
+}
+header.bar .icon{
+    font-size: 20px
+}
+.floor-ctn .img-response {
+    width: 60%;
+}
+.no-navigate-right .table-view-cell{
+    padding:11px 15px 11px 15px;
+}
+.no-navigate-right .table-view-cell > a:not(.btn){
+    margin:-11px -15px -11px -15px;
+}
+.input-row>span{
+    float: right;
+    width: 65%;
+    padding-left: 0;
+    margin-bottom: 0;
+    border: 0;
+    line-height: 30px;
+    font-size: 12px;
+}
+.m-input-group{
+    width:100%;
+}
+.input-row label{
+    font-size: 12px;
+}
+.m-input-group .input-row{
+    background-position: 0 100%;
+}
+.color-normal{
+    color:#333;
+}
+.segmented-control{
+    border:none;
+}
+.segmented-control .control-item{
+    border:solid 1px #FF3C25;
+    border-right:none;
+    color: #000;
+}
+.segmented-control .control-item.active{
+    background-color: #FF3C25;
+}
+.segmented-control .control-item:first-child{
+    border-radius: 5px 0 0 5px;
+    border-left:solid 1px #FF3C25;
+}
+.segmented-control .control-item:last-child{
+    border-radius: 0 5px 5px 0;
+    border-right:solid 1px #FF3C25;
+}
+.list-status .control-item {
+    border: none;
+    text-decoration: none;
+}
+.list-status .control-item.active {
+    border-radius: 0;
+    color: #000;
+    border-left: none;
+    border-bottom: solid 1px #FF3C25;
+    background-color: transparent;
+}
+.list-status .control-item:first-child {
+    border-radius: 0 ;
+    border-left: none;
+}
+.list-status .control-item:last-child {
+    border-radius: 0 ;
+    border-right: none;
+}
+.search4more{
+    width:100%;
+    margin: 0 0 10px 0;
+    text-align: center;
+    color:#FF3C25;
+    font-size: 14px;
+    padding:10px 0;    
+}
+/*出现在头部的表单*/
+.header-form{
+    width: 7.85rem;
+    display: inline-block;
+    margin:0 auto;
+    position: relative;
+}
+.header-form input[type='search']{
+    padding-left:23px;
+    font-size: 12px;
+    height: 32px;
+}
+.header-form .fa-search{
+    position: absolute;
+    left: 5px;
+    top: 16px;
+
+}
+.header-form .fa-remove{
+    position: absolute;
+    right: 4px;
+    top: 11px;
+    padding: 5px;
+    display: none;
+}
+.header-form input:focus ~ .fa-remove{
+    display: block;
+}
+header a{
+    text-decoration: none;
+}
+header .text-link{
+    line-height: 44px;
+    color: #696969;
+    text-decoration: none;
+    position: relative;
+    left: 2px;
+}
+/*ratchet fix*/
+.table-view .table-view-cell {
+    background-position: 0 100%;
+    border-bottom: 0;
+}
+/*轮播*/
+#coursel img{
+    height: 6.25rem;
+    width:10rem;
+}
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float:left;
+    width:100%;
+    position: relative;
+}
+.carousel-indicator{
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    height: 10px;
+    text-align: right;
+    top: -26px;
+    right:20px;
+    z-index: 100;
+}
+.carousel-indicator span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #FFF;
+    background-size: 20px 40px;
+    margin-right: 2px;
+    /* border-radius: 50px; 圆形or方形*/
+}
+.carousel-indicator .curr{
+    background-color: #ea5080;
+}
+/*查询页面过滤器*/
+.search-filter {
+    padding: 6px 0;
+    background-color: #FFF;
+    border-bottom: solid 1px #F3F3F3;
+}
+.search-filter .search-filter-item{
+    width: 3.2641rem;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.search-filter .search-filter-item span{
+    color:#666;
+    font-size:14px;
+}
+.search-filter .search-filter-item.active span{
+    color:#FF3A23
+}
+.search-filter .search-filter-item .fa{
+    display: none;
+    color:#A9A9A9;
+}
+.search-filter .search-filter-item.active .fa{
+    display: block;
+}
+.search-filter .search-filter-item .fa-caret-up{
+    position: absolute;
+    right: .9rem;
+    top: 0px;
+}
+
+.search-filter .search-filter-item .fa-caret-down{
+    position: absolute;
+    right: .9rem;
+    top: 7px;
+}
+.search-filter-item.asc .fa-caret-up{
+    color:#FF3A23
+}
+.search-filter-item.desc .fa-caret-down{
+    color:#FF3A23
+}
+/*商品分类*/
+.good-list{
+
+}
+.good-list .good-img{
+    width:2.6875rem;
+    height:2.6875rem;
+}
+.table-view.good-list .table-view-cell{
+
+}
+.good-list .good-title {
+    color: #818181;
+    height: 1.55rem;
+    overflow: hidden;
+    font-size: 14px;
+}
+.good-list .good-price {
+    color: #FF5440;
+    font-size: 17px;
+}
+.good-list .good-supplier {
+    color: #000000;
+    font-size: 12px;
+}
+.good-list .curruency{
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+}

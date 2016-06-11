@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../css/animate/animate.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet-theme-ios.css" rel="stylesheet"/>
+    <link href="../../css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="bar bar-nav" id="header">
+</header>
+<div class="content" id="main-ctn">
+    <div id="main"></div>
+    <div class="shopcart-submit-ctn">
+        <div class="checkall pull-left">
+            <div class="checkbox checkbox-info checkbox-circle">
+                <input type="checkbox" id="checkallitem" v-on:click="selectedAll"/>
+                <label for="checkallitem">全选</label>
+            </div>
+        </div>
+        <div class="pull-right">
+            <div class="shopcart-amount">
+                <span>合计:￥</span>
+                <span id="c_amount">{{amount}}</span>
+            </div>
+            <a href="../my/my.html" data-ignore="push">
+                <button class="btn btn-danger shopcart-submit">提交</button>
+            </a>
+        </div>
+    </div>
+    <div id="mask" class="good-choose-mask">
+    </div>
+</div>
+
+
+<nav class="bar bar-tab" id="footer">
+</nav>
+<script src="../../js/libs/require/require.js" data-main="main"></script>
+<script type="text/template" id="tpl_shopcart_shopcartview">
+    <a class="btn btn-link btn-nav pull-right" href="#">
+        <span id="btnEdit">编辑</span>
+    </a>
+    <h1 class="title">购物车</h1>
+</script>
+<!--商品详细-->
+<script type="text/template" id="tpl_goods_goodsview">
+    <a class="btn btn-link btn-nav pull-left" href="javascript:history.go(-1)" data-ignore="push">
+        <span class="icon icon-left-nav"></span>
+    </a>
+    <h1 class="title">商品详细</h1>
+</script>
+</body>
+</html>

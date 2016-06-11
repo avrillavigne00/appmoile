@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单编辑</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../css/animate/animate.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet-theme-ios.css" rel="stylesheet"/>
+    <link href="../../css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../orderconfirm/orderconfirm.css">
+</head>
+<body>
+<header class="bar bar-nav" id="header">
+    <a class="btn btn-link btn-nav pull-left" href="javascript:history.go(-1)" >
+        <span class="icon icon-left-nav"></span>
+    </a>
+    <h1 class="title">确认订单</h1>
+</header>
+<div class="content" id="main-ctn">
+    <div id="main">
+        <div class="addr-info">
+            <a href="" class="navigate-right">
+                <i class="fa fa-location"></i>
+                <div>
+                    <span class="receive-title">收货人</span><span>李三白</span>
+                    <span class="pull-right">18618898726</span>
+                </div>
+                <div class="addr-detail">
+                    深圳市南山区高新科技南十二路高新园四路中科大厦27楼深圳用友创新中心
+                </div>
+            </a>
+        </div>
+        <ul class="o-goodlist table-view no-navigate-right m-t-md" id="datalist">
+            <li class="table-view-cell">
+                <a class="media-object pull-left" href="#goods/goodsview?ware_id=1" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/1.jpg">
+                </a>
+                <div class="media-body">
+                    <p class="good-title">MacBook Pro</p>
+
+                    <p class="good-desc">产品规格:大,绿</p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>123.45</span>
+                            </span>
+                    <span class="good-num pull-right">x1</span>
+                </div>
+            </li>
+            <li class="table-view-cell">
+                <a class="media-object pull-left" href="#goods/goodsview?ware_id=1" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/1.jpg">
+                </a>
+                <div class="media-body">
+                    <p class="good-title">MacBook Pro</p>
+
+                    <p class="good-desc">产品规格:大,绿</p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>123.45</span>
+                            </span>
+                    <span class="good-num pull-right">x1</span>
+                </div>
+            </li>
+        </ul>
+        <ul class="table-view no-navigate-right m-t-md list-item">
+            <li class="table-view-cell media ">
+                <a class="navigate-right">
+                    <span class="media-object pull-left">发票信息</span>
+                    <div class="media-body pull-right">
+                        <select name="" id="" class="select-item" dir="rtl">
+                            <option value="1">用友网络</option>
+                            <option value="2">用友网络科技</option>
+                        </select>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media ">
+                <a class="navigate-right">
+                    <span class="media-object pull-left">[选配]显示器21寸</span>
+                    <div class="media-body pull-right">
+                        <div class="text-item">
+                            <span class="curruency">￥</span><span>123.45</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media ">
+                <a class="navigate-right">
+                    <span class="media-object pull-left">[服务]3年上门服务</span>
+                    <div class="media-body pull-right">
+                        <div class="text-item">
+                            <span class="curruency">￥</span><span>123.45</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media ">
+                    <div class="media-body pull-right">
+                        <div class="text-item">
+                            <span>共1件商品 合计:</span>
+                            <span class="curruency">￥</span><span class="good-price">2123.45</span>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<nav class="bar bar-tab" id="footer">
+    <a class="tab-item active" href="s_index.html" data-ignore="push">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+    </a>
+    <a class="tab-item" href="s_category.html" data-ignore="push">
+        <i class="icon fa fa-list-ul"></i>
+        <span class="tab-label">分类</span>
+    </a>
+    <a class="tab-item" href="s_shopcart.html" data-ignore="push">
+        <span class="icon fa fa-shopping-cart"></span>
+        <span class="tab-label">购物车</span>
+    </a>
+    <a class="tab-item" href="s_my.html" data-ignore="push">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">我</span>
+    </a>
+</nav>
+</body>
+</html>

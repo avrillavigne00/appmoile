@@ -1,0 +1,37 @@
+
+    <div id="shopcartlist" class="shopcart-list">
+        <div class="shopcart-item" v-for="supplier in suppliers" :id=" 'group' + $index">
+            <div class="pu-title">
+                <div class="checkbox checkbox-info checkbox-circle">
+                    <input type="checkbox" :name="supplier" :id=" 'supplier_' + $index" v-on:click="selectedGroup('group' + $index, $event)" />
+                    <label :for=" 'supplier_' + $index">{{supplier}}</label>
+                </div>
+
+            </div>
+            <ul class="table-view">
+                <li class="table-view-cell media" v-for="item in items | supplierBy supplier ">
+                    <div class="pull-left checkbox-ctn">
+                        <div class="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" :id=" 'goods_' + item.YWM_ID" v-model="item.checked"/>
+                            <label :for=" 'goods_' +  item.YWM_ID">  &nbsp;</label>
+                        </div>
+                    </div>
+                    <a class="media-object pull-left" href="#goods/goodsview?ware_id={{item.YWM_ID}}" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/{{item.YWM_PicName}}">
+                    </a>
+                    <div class="media-body">
+                        <p class="good-title">{{item.YWM_Name}}</p>
+
+                        <p class="good-desc">产品规格:<span>{{item.YWM_Kind}}</span></p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>{{item.YWM_Price}}</span>
+                            </span>
+                        <span class="good-num pull-right">x1</span>
+                        <span  style="display: none" class="del-item pull-right"  v-on:click="delete">删除</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+

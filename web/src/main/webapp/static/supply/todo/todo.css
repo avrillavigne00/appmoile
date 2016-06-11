@@ -1,0 +1,38 @@
+.category-lv-1 {
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    height: 39.5rem;
+    left:0;
+    overflow-y: scroll;
+}
+.category-lv-1 ul {
+    padding: 0;
+    border-right: solid 1px #ccc;
+}
+.category-lv-1 li {
+    list-style: none;
+    height: 4.166666rem;
+    line-height: 4.166666rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+}
+.category-lv-2 {
+    width: 75%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    overflow-y: scroll;
+    height: 39.5rem;
+}
+.category-lv-2 ul {
+    padding: 0;
+}
+.category-lv-2 li {
+    list-style: none;
+    height: 8rem;
+    text-align: center;
+    float: left;
+    width: 33.33333333%;
+}

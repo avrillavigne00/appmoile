@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../css/animate/animate.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet-theme-ios.css" rel="stylesheet"/>
+    <link href="../../css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../order/orderlist.css">
+</head>
+<body>
+<header class="bar bar-nav" id="header">
+    <a class="btn btn-link btn-nav pull-left" href="javascript:history.go(-1)" >
+        <span class="icon icon-left-nav"></span>
+    </a>
+    <h1 class="title">订单列表</h1>
+</header>
+<div class="content" id="main-ctn">
+    <div id="main">
+        <div id="status">
+            <ul class="order-status">
+                <li class="active">全部</li>
+                <li>未发布</li>
+                <li>待确认</li>
+                <li>已提交</li>
+                <li>已下单</li>
+            </ul>
+        </div>
+        <div class="supply-name">
+            <i class="fa fa-shopping-cart"></i>
+            <span>协议供应商01</span>
+            <span class="pull-right label-o-status label label-warning">审批中</span>
+        </div>
+        <ul class="orderlist table-view no-navigate-right" id="datalist">
+            <li class="table-view-cell">
+                <a class="media-object pull-left" href="#goods/goodsview?ware_id=1" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/1.jpg">
+                </a>
+                <div class="media-body">
+                    <p class="good-title">MacBook Pro</p>
+
+                    <p class="good-desc">产品规格:大,绿</p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>123.45</span>
+                            </span>
+                    <span class="good-num pull-right">x1</span>
+                </div>
+            </li>
+            <li class="table-view-cell">
+                <a class="media-object pull-left" href="#goods/goodsview?ware_id=1" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/1.jpg">
+                </a>
+                <div class="media-body">
+                    <p class="good-title">MacBook Pro</p>
+
+                    <p class="good-desc">产品规格:大,绿</p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>123.45</span>
+                            </span>
+                    <span class="good-num pull-right">x1</span>
+                </div>
+            </li>
+        </ul>
+        <div class="order-operate">
+            <div class="btn btn-danger btn-outline pull-right">查看进程</div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="supply-name">
+            <i class="fa fa-shopping-cart"></i>
+            <span>协议供应商01</span>
+            <span class="pull-right label-o-status label label-warning">待提交</span>
+        </div>
+        <ul class="orderlist table-view no-navigate-right" id="datalist">
+            <li class="table-view-cell">
+                <a class="media-object pull-left" href="#goods/goodsview?ware_id=1" data-ignore="push">
+                    <img class="img-responsive"
+                         src="../../goodsimg/1.jpg">
+                </a>
+                <div class="media-body">
+                    <p class="good-title">MacBook Pro</p>
+
+                    <p class="good-desc">产品规格:大,绿</p>
+                            <span class="good-price pull-left">
+                                <span class="curruency">￥</span><span>123.45</span>
+                            </span>
+                    <span class="good-num pull-right">x1</span>
+                </div>
+            </li>
+        </ul>
+        <div class="order-operate">
+            <div class="btn btn-danger btn-outline pull-right">提交订单</div>
+            <div class="btn btn-danger btn-outline pull-right">删除订单</div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="search4more j-query4more">
+            加载更多
+        </div>
+
+    </div>
+</div>
+<nav class="bar bar-tab" id="footer">
+    <a class="tab-item active" href="s_index.html" data-ignore="push">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+    </a>
+    <a class="tab-item" href="s_category.html" data-ignore="push">
+        <i class="icon fa fa-list-ul"></i>
+        <span class="tab-label">分类</span>
+    </a>
+    <a class="tab-item" href="s_shopcart.html" data-ignore="push">
+        <span class="icon fa fa-shopping-cart"></span>
+        <span class="tab-label">购物车</span>
+    </a>
+    <a class="tab-item" href="s_my.html" data-ignore="push">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">我</span>
+    </a>
+</nav>
+</body>
+</html>

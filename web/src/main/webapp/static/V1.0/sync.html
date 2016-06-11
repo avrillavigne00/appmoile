@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>交易协同</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="no" /> 
+    <meta content="telephone=no" name="format-detection" />
+     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/animate/animate.css" rel="stylesheet"/>
+    <link href="../css/ratchet/css/ratchet.css" rel="stylesheet"/>
+    <link href="../css/ratchet/css/ratchet-theme-ios.css" rel="stylesheet"/>
+    <link href="../css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <header class="bar bar-nav" id="header">	   
+      
+	</header>
+    <div class="content" id="main-ctn">
+        <div id="main"></div>
+    </div>
+    <nav class="bar bar-tab" id="footer">
+        
+    </nav>
+	<script src="../js/libs/require/require.js" data-main="supplymain"></script>
+    <script id="tpl_sync_syncview" type="text/template">
+        <div class="segmented-control">
+            <a class="control-item active" href="#sync/syncview" data-ignore="push">订单</a>
+            <a class="control-item" href="#sync/contactview" data-ignore="push">合同</a>
+            <a class="control-item" href="#sync/arriveplan" data-ignore="push">到货</a>
+        </div>
+    </script>
+    <script id="tpl_order_ordereditview" type="text/template">
+        <a class="btn btn-link btn-nav pull-left" href="#sync/syncview" data-ignore="push">
+            <span class="icon icon-left-nav"></span>
+                返回
+        </a>   
+        <h1 class="title">订单确认</h1>
+    </script>
+</body>
+</html>

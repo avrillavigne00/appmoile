@@ -1,0 +1,83 @@
+.pu-title {
+    background-color: #FFF;
+    line-height: 24px;
+    font-size: 12px;
+    color: #7a7a7a;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.shopcart-list{
+    margin-bottom: 100px;
+}
+.shopcart-list .shopcart-item img {
+    width: 2.16rem;
+    height: 2.16rem;
+    border-radius: 2px;
+    border: solid 1px #e6e6e6;
+}
+.shopcart-list .shopcart-item .media-body{
+    height: 2.16rem;
+    position: relative;
+}
+.shopcart-item .good-title {
+    font-size: 13px;
+    color: #666;
+    line-height: 15px;
+}
+.shopcart-item .good-desc {
+    font-size: 12px;
+    color: #979797;
+    line-height: 15px;
+    margin-top: 7px;
+}
+.shopcart-item .media{
+    margin-top:0;
+}
+.shopcart-item .good-price {
+    position: absolute;
+    bottom: 0;
+    line-height: 15px;
+    color:#FF3C25;
+    font-size: 12px;
+}
+.shopcart-item .good-num{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 15px;
+    color:#666;
+    font-size: 13px;
+}
+.shopcart-item .table-view-cell{
+    padding: 11px 15px 11px 15px;
+}
+.shopcart-list .checkbox-ctn{
+    margin:.5rem 0 0 -5px;
+}
+.shopcart-submit-ctn{
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    background-color: #FFF;
+    height: 46px;
+}
+.shopcart-submit-ctn .checkall{
+    padding: 10px;
+}
+.shopcart-amount {
+    display: inline-block;
+    line-height: 46px;
+    color: #666;
+    font-size: 13px;
+    padding: 0 10px;
+}
+.shopcart-submit,.shopcart-submit:hover {
+    width: 3.226rem;
+    height: 45px;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: 0;
+    border:0;
+    background-color: #FF3A12;
+    color:#FFF;
+}

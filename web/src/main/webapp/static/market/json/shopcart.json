@@ -1,0 +1,80 @@
+[
+  {
+    "cart_id": "5a87ce35-4612-4c68-994b-bff674cffc5a",
+    "ware_id": 1,
+    "title": "惠普打印机1",
+    "main_picture": "1.jpg",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台1"
+    },
+    "price": 12.34,
+    "quantity": 10.0,
+    "amount": 123.4,
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大"
+          },
+          {
+            "value": "蓝绿"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cart_id": "5c67beac-1728-44ec-89d8-b6d16b2c9e18",
+    "ware_id": 2,
+    "title": "惠普打印机2",
+    "main_picture": "2.jpg",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台2"
+    },
+    "price": 12.34,
+    "quantity": 10.0,
+    "amount": 123.4,
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大"
+          },
+          {
+            "value": "蓝绿"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cart_id": "5c67beac-1728-44ec-89d8-b6d16b2c9e18",
+    "ware_id": 3,
+    "title": "惠普打印机3",
+    "main_picture": "3.jpg",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台2"
+    },
+    "price": 12.34,
+    "quantity": 10.0,
+    "amount": 123.4,
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大"
+          },
+          {
+            "value": "蓝绿"
+          }
+        ]
+      }
+    ]
+  }
+]

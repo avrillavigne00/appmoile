@@ -1,0 +1,31 @@
+[
+  {
+  "putitle":"天猫政企采购平台",
+  "puid":"1",
+  "products":[
+    {"id":"1",
+    "title":"茱莉蔻美白护肤",
+    "price":"12.50",
+    "spec":"大,蓝绿",
+    "unitid":"1",
+    "unitname":"个"},
+    {"id":"2",
+      "title":"茱莉蔻美白护肤",
+      "price":"12.50",
+      "spec":"大,蓝绿",
+      "unitid":"1",
+      "unitname":"个"}
+  ]
+},{
+  "putitle":"天猫政企采购平台",
+  "puid":"1",
+  "products":[{
+    "id":"1",
+    "title":"茱莉蔻美白护肤",
+    "price":"12.50",
+    "spec":"大,蓝绿",
+    "unitid":"1",
+    "unitname":"个"}
+  ]
+}
+]

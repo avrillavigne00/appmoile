@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../css/animate/animate.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet.min.css" rel="stylesheet"/>
+    <link href="../../css/ratchet/css/ratchet-theme-ios.css" rel="stylesheet"/>
+    <link href="../../css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../shopcart/shopcart.css">
+    <link rel="stylesheet" href="s_gooddetail.css">
+</head>
+<body>
+<header class="bar bar-nav" id="header">
+    <a class="btn btn-link btn-nav pull-left" href="s_index.html">
+        <span class="icon icon-left-nav"></span>
+    </a>
+    <h1 class="title">商品详细</h1>
+</header>
+<div class="content" id="main-ctn">
+    <div id="main">
+        <div class="good-detail-ctn">
+            <div id="carsoul">
+                <!--这里放的时轮播图-->
+            </div>
+            <img src="http://placehold.it/375x312" alt="">
+            <div class="good-titlename">Apple macBook pro 苹果热销产品 超薄高配置笔记本电脑</div>
+            <div class="good-price">
+                <span class="currency">￥</span><span>12000</span>
+            </div>
+            <div class="good-supplier">
+                <i class="icon"></i><span>天猫政企采购平台</span>
+            </div>
+            <div id="specchoose" class="good-spec-choose">
+                <div class="good-spec-box">
+                    <span>选择</span>
+                </div>
+                <div class="good-spec-selected">
+                    <span>商品规格</span>
+                </div>
+                <div class="pull-right good-select">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mask" class="good-choose-mask">
+
+    </div>
+    <div id="specctn" class="good-spec-ctn">
+        <div class="good-baseinfo">
+            <img src="http://placehold.it/86x86" class="img-responsive" alt="">
+            <div class="good-baseinfo-title">
+                <div class="good-title">Apple macBook pro 苹果热销产品 超薄高配置笔记本</div>
+                <div id="close-btn" class="close-btn">
+                    <span class="fa fa-remove"></span>
+                </div>
+            </div>
+        </div>
+        <div class="spec-attr">
+            <p>交易方式</p>
+            <span class="spec-item">15寸</span>
+            <span class="spec-item active">13.3寸</span>
+        </div>
+        <div class="spec-num">
+            <span>数量</span>
+            <div class="number-generator-ctn">
+                <input type="text">
+            </div>
+        </div>
+        <div class="spec-operate">
+            <div class="o-add2cart">加入购物车</div>
+            <div class="o-buyit">立即购买</div>
+        </div>
+    </div>
+</div>
+<nav class="bar bar-tab good-detail" style="display: table;">
+    <a class="tab-item tab-left">
+        <span class="icon fa fa-shopping-cart"></span>
+        <span class="tab-label">购物车</span>
+    </a>
+    <a class="tab-item tab-left">
+        <span class="icon fa fa-star-o"></span>
+        <span class="tab-label">收藏</span>
+    </a>
+    <a class="tab-item tab-right tab-add2cart">加入购物车</a>
+    <a class="tab-item tab-right tab-buyit">  立即购买  </a>
+</nav>
+<nav class="bar bar-tab" id="footer" style="display: none">
+    <a class="tab-item active" href="s_index.html" data-ignore="push">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+    </a>
+    <a class="tab-item" href="s_category.html" data-ignore="push">
+        <i class="icon fa fa-list-ul"></i>
+        <span class="tab-label">分类</span>
+    </a>
+    <a class="tab-item" href="s_shopcart.html" data-ignore="push">
+        <span class="icon fa fa-shopping-cart"></span>
+        <span class="tab-label">购物车</span>
+    </a>
+    <a class="tab-item" href="s_my.html" data-ignore="push">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">我</span>
+    </a>
+</nav>
+<script >
+    /*绑定选择商品规格点击事件*/
+    var element = document.getElementById("specchoose");
+    //弹出的规格选择框
+    var toggletarget = document.getElementById("specctn")
+    //遮罩mask
+    var mask = document.getElementById("mask");
+    //关闭按钮
+    var closebtn = document.getElementById("close-btn");
+    element.addEventListener("touchend", function(){
+        toggletarget.classList.add("active");
+        mask.classList.add("active");
+    });
+    mask.addEventListener("touchend",function(){
+        toggletarget.classList.remove("active");
+        mask.classList.remove("active");
+    });
+    closebtn.addEventListener("touchend",function(){
+        toggletarget.classList.remove("active");
+        mask.classList.remove("active");
+    });
+</script>
+</body>
+</html>

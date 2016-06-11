@@ -1,0 +1,12 @@
+ <% _.each(modellist, function(bizmodel,i){ %>
+  <li class="table-view-cell">
+    <a class="" href="#order/ordereditview?id=1" data-ignore="push">
+      <div class="media-body">
+        <p class="sync-title"><%=bizmodel.get("title")%><span class="badge badge-info">待发布</span></p>
+        <p>商品：<%=bizmodel.get("product")%></p>
+        <p class="pull-left">金额：$<%=bizmodel.get("money")%></p>
+        <button class="btn btn-default pull-right">发布</button>
+      </div>
+    </a>
+  </li>
+  <%})%>
