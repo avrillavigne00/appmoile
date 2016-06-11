@@ -1,0 +1,28 @@
+<img src="../../images/order/order_address.png" />
+<img src="../../images/order/order_goods.png" />
+<img src="../../images/order/order_invoice.png" />
+<img src="../../images/order/order_invoice_list.png" />
+<img src="../../images/order/order_command.png" />
+
+
+<a href="#">提交</a>
+<a href="#">保存</a>
+<a href="#">取消</a>
+
+
+<div id="shopcartlist">
+    <div class="shopcart-item"  v-for="item in items">
+        <div class="pu-title">{{item.putitle}}</div>
+        <ul class="table-view">
+            <li class="table-view-cell media" v-for="prod in item.products">
+
+                    <img class="media-object pull-left" src="//gw.alicdn.com/tps/TB1kMToLFXXXXb2XXXXXXXXXXXX-140-140.jpg_240x240Q50s150.jpg_.webp">
+                    <div class="media-body">
+                        {{prod.title}}
+                        <p>{{prod.spec}}</p>
+                    </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

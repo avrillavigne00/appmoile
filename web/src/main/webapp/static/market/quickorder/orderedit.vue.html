@@ -1,0 +1,73 @@
+<form class="input-group m-input-group m-t-md order-title-edit">
+    <div class="input-row">
+        <label>客<span style="width:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>户</label>
+        <!--<span>{{ordercode}}</span>-->
+        <select>
+        <option value="">请选择</option>
+        <option value="01">鸿坤</option>
+        <option value="02">中建</option>
+        </select>
+    </div>
+    <div class="input-row ">
+        <label>需求日期</label>
+        <input type="date" placeholder="2015-01-01" name="arrivedate" v-model="prod.arrivedate">
+
+    </div>
+    <div class="input-row">
+        <label>水泥品种</label>
+        <select>
+            <option value="">请选择</option>
+            <option value="01">红狮</option>
+            <option value="02">南方</option>
+        </select>
+    </div>
+    <div class="input-row">
+        <label>单<span style="width:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>价</label>
+        <input type="text" placeholder="¥0.00" name="price" v-model="prod.price" v-on:change="calcmny(prod)">
+    </div>
+    <div class="input-row">
+        <label>数<span style="width:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>量</label>
+        <input type="text" placeholder="0" name="price" v-model="prod.num" v-on:change="calcmny(prod)">
+    </div>
+    <div class="input-row">
+        <label>合<span style="width:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>计</label>
+        <span style="color: red;padding-left: 10px">¥0.00</span>
+    </div>
+    <div style="height: 10px;background-color: #efeff4">
+    </div>
+    <div class="input-row">
+        <label>司机姓名</label>
+        <select>
+        <option value="">请选择</option>
+        <option value="01">张三</option>
+        <option value="02">李四</option>
+        </select>
+    </div>
+    <div class="input-row">
+        <label>驾驶证</label>
+        <span>3315699317041111</span>
+    </div>
+    <div class="input-row">
+        <label>车号</label>
+        <span>京A U8977</span>
+    </div>
+    <div class="input-row">
+        <label>电话</label>
+        <span>13100001111</span>
+    </div>
+    <div style="height: 10px;background-color: #efeff4">
+    </div>
+    <div class="input-row">
+        <label>订货电话</label>
+        <span>13100001111</span>
+    </div>
+    <div class="input-row">
+        <label>联系人</label>
+        <span>张三</span>
+    </div>
+</form>
+<div class="order-commit-ctn text-right">
+    <span>金额</span>：
+    <span>￥{{totalmny}}</span>
+    <span class="btn-bottom j-submit">提交</span>
+</div>

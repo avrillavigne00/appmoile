@@ -1,0 +1,48 @@
+{
+  "ordercode":"XDS120135558",
+  "enterprise":"大地保险",
+  "user":"李某某",
+  "cell":"18618475856",
+  "date":"2015-05-16",
+  "amount":"1234",
+  "products":[
+    {
+      "id":"1",
+      "name":"4G 500g u盘",
+      "price":"1400",
+      "unitname":"箱",
+      "unitpk":"1",
+      "arrivedate":"2015-01-01",
+      "num":"2",
+      "mny":2800
+    },{
+      "id":"2",
+      "name":"4G 400g u盘",
+      "price":"3100",
+      "unitname":"台",
+      "unitpk":"1",
+      "arrivedate":"2015-01-01",
+      "num":"3",
+      "mny":9300
+    },{
+      "id":"3",
+      "name":"4G 300g u盘",
+      "price":"2300",
+      "unitname":"个",
+      "unitpk":"1",
+      "arrivedate":"2015-01-01",
+      "num":"1",
+      "mny":"2300"
+    },{
+      "id":"4",
+      "name":"4G 200g u盘",
+      "price":"400",
+      "unitname":"根",
+      "unitpk":"1",
+      "arrivedate":"2015-01-02",
+      "num":"4",
+      "mny":"1600"
+    }
+  ]
+
+}

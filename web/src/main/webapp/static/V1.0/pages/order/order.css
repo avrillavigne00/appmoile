@@ -1,0 +1,63 @@
+.m-order-detail{
+    padding: 0;
+        
+}
+.m-order-detail li{
+	list-style: none;
+	font-size: 12px;
+	color:#949494;
+	background-color: #FFF;
+    padding: 5px 15px;
+}
+.m-order-detail p{
+	margin-bottom: 2px;
+}
+.m-order-detail .order-title{
+	color:#000;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.m-order-detail .order-num{
+	color:#887F7F;
+	
+}
+.m-order-detail hr{
+	margin:2px 0;
+}
+.m-order-detal-btm{
+	line-height: 28px;
+}
+.m-order-detail .money{
+	color:red;
+}
+.order-info-edit,.order-info{
+	display: none;
+}
+.m-order-detail .active{
+	display: block;
+}
+.order-info-edit .units{
+	position: absolute;
+    right: 0;
+    width: 30px;
+    text-align: right;
+}
+.order-info-edit{
+	margin: -3px -10px 0 -15px;
+	font-size: 12px;
+}
+.order-info-edit input{
+	color:#000;
+	font-size: 12px;
+}
+.order-commit-ctn{
+	background-color: #FFF;
+}
+.order-commit-ctn span{
+	display: inline-block;
+}
+.order-commit-ctn .btn-bottom{
+	padding: 10px 20px;
+    background-color: red;
+    color: #FFF;
+}

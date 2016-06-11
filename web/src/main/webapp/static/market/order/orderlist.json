@@ -1,0 +1,38 @@
+[
+  {
+    "creatation_time": "2016 01 01 12:00:00",    //订单时间
+    "order_code": "ABCD0001",    //订单号
+    "supplier": {
+      "id": 1,
+      "supplier_name": ""    //供应商"
+    },
+    "amount": "",    //订单总额"
+
+    //收货人
+    "consignee": {
+      "id": 1,   //ID
+      "person_name": "采购员1",  //收货人名称
+      "phone_number": "	18888888888",   //手机号
+      "county_code": "110102",    //地区代码
+      "county_desc": "北京市 北京市 西城区",   //地区代码显示名称
+      "detail_address": "用友软件园	"      //详细地址
+    },
+    "details":[{    //订单明细
+    "ware": {
+      "wareId": "",
+      //商品ID
+      "main_picture": "",
+      //商品图片
+      "title": ""
+      //商品标题
+    },
+    "quantity": "",    //购买数量
+    "property_options": "",    //购买选中的商品属性
+    "price": "",    //单价
+
+    "amount": ""    //小计"
+    }],
+    "status": ""    //状态
+  }
+]
+

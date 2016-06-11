@@ -1,0 +1,64 @@
+[
+  {
+    "creatation_time": "2016 01 01 12:00:00",
+    "order_code": "ABCD0001",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台"
+    },
+    "amount": "",
+
+    "consignee": {
+      "id": 1,
+      "person_name": "采购员1",
+      "phone_number": "18888888888",
+      "county_code": "110102",
+      "county_desc": "北京市 北京市 西城区",
+      "detail_address": "用友软件园"
+    },
+    "details":[{
+      "ware": {
+        "ware_id": "",
+        "main_picture": "1.jpg",
+        "title": ""
+      },
+      "quantity": "",
+      "property_options": "",
+      "price": "",
+
+      "amount": ""
+    }],
+    "status": ""
+  },
+  {
+    "creatation_time": "2016 01 01 12:00:00",
+    "order_code": "ABCD0001",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台"
+    },
+    "amount": "",
+
+    "consignee": {
+      "id": 1,
+      "person_name": "采购员1",
+      "phone_number": "18888888888",
+      "county_code": "110102",
+      "county_desc": "北京市 北京市 西城区",
+      "detail_address": "用友软件园"
+    },
+    "details":[{
+      "ware": {
+        "ware_id": "",
+        "main_picture": "1.jpg",
+        "title": ""
+      },
+      "quantity": "",
+      "property_options": "",
+      "price": "",
+
+      "amount": ""
+    }],
+    "status": ""
+  }
+]

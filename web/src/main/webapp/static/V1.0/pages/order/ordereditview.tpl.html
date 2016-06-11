@@ -1,0 +1,66 @@
+<form class="input-group m-input-group m-t-md">
+  <div class="input-row">
+    <label>订单编号</label>
+    <span><%=model.get("ordercode")%></span>
+  </div>
+  <div class="input-row">
+    <label>采购企业</label>
+    <span><%=model.get("enterprise")%></span>
+  </div>
+  <div class="input-row">
+    <label>采购人员</label>
+    <span><%=model.get("user")%></span>
+  </div>
+  <div class="input-row">
+    <label>联系电话</label>
+    <span><%=model.get("cell")%></span>
+  </div>
+  <div class="input-row">
+    <label>订货日期</label>
+    <span><%=model.get("date")%></span>
+  </div>
+</form>
+<form id="submitform">
+<ul class="m-order-detail">
+	<%_.each(model.get("products"),function(prod){%>
+	<li class="m-t-md">
+		<div class="order-title"><%=prod.name%></div>
+		<div class="order-info active">
+			<div class="order-num">
+				<span class="money">￥<%=prod.money%></span><span>/<%=prod.unitname%></span><span class="pull-right color-normal">x<%=prod.amounts%></span>
+			</div>		
+			<div><span>到货日期：</span><span class="color-normal"><%=prod.arrivedate%></span></div>	
+			<hr>		
+		</div>
+		<div class="order-info-edit">
+			<div class="input-group m-input-group">
+			  <div class="input-row">
+			    <label>单价</label>
+			    <input type="text" placeholder="3400" name="price" value="<%=prod.money%>">
+			  </div>
+			  <div class="input-row">
+			    <label>数量</label>
+			    <input type="email" placeholder="2" name="num" value="<%=prod.amounts%>">
+			    <span class="pull-right units"><%=prod.unitname%></span>
+			  </div>
+			  <div class="input-row">
+			    <label>到货日期</label>
+			    <input type="date" placeholder="2015-01-01" name="arrivedate" value="<%=prod.arrivedate%>">
+			  </div>
+			</div>			
+		</div>
+		<div class="text-right m-order-detal-btm">
+			<span>金额：</span>
+			<span>￥<%=prod.money%></span>
+			<button type="button" class="btn btn-primary j-modify">修改</button>
+		</div>
+	</li>	
+	<%});%>
+</ul>
+</form>
+<div class="order-commit-ctn text-right">	
+	<span>金额</span>：
+	<span>￥34.000</span>
+	<span class="btn-bottom j-submit">提交</span>	
+</div>
+<br>
