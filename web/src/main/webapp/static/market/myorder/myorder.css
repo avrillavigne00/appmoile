@@ -1,0 +1,60 @@
+.my-title{
+    text-align: center;
+    padding: 10px 0;
+}
+.my-title .icon{
+    font-size: 2rem;
+}
+.my-title div{
+    font-size: 14px;
+}
+.order-state-ctn{
+    margin:-11px -65px -11px -15px;
+    padding: 0;
+}
+.order-state-ctn li{
+    width: 2.5rem;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.control-item.active a{
+    background-color: #ccc;
+    border-radius: 0px 0 0 0px;
+}
+.control-item a{
+    background-color: #ccc;
+}
+
+.mycart{
+    margin: 0;
+    border-radius: 0;
+}
+.segmented-control .control-item {
+    border-radius: 0px 0px 0px 0px;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.segmented-control .control-item:first-child {
+    background-color: #efeff4;
+    border-radius: 0px 0px 0px 0px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.segmented-control .control-item:last-child {
+    background-color: #efeff4;
+    border-radius: 0px 0px 0px 0px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.segmented-control .control-item.active {
+    border:3px solid transparent;
+    color: #000;
+    border-bottom-color: cornflowerblue;
+    height: 40px;
+    box-shadow: none;
+    box-sizing: inherit;
+}

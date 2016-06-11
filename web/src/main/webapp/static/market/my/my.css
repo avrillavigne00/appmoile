@@ -1,0 +1,20 @@
+.my-title{
+    text-align: center;
+    padding: 10px 0;
+}
+.my-title .icon{
+    font-size: 2rem;
+}
+.my-title div{
+    font-size: 14px;
+}
+.order-state-ctn{
+    margin:-11px -65px -11px -15px;
+    padding: 0;
+}
+.order-state-ctn li{
+    width: 2.5rem;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
