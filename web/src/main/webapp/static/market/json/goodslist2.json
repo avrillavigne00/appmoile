@@ -1,0 +1,34 @@
+[
+  {
+    "ware_id": "1",
+    "cart_id":"",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台"
+    },
+    "title": "石灰石（自产）",
+    "brand":"利森牌",
+    "packing":"",
+    "desc":"一个简单的描述",
+    "main_picture": "1.jpg",
+    "pictures": ["1.jpg","3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+    "price": "12.50",
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大",
+            "check":false
+          },
+          {
+            "value": "蓝绿",
+            "check":false
+          }
+        ]
+      }
+    ],
+    "unitname": "个",
+    "count":1
+  }
+]

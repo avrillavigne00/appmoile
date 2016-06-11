@@ -1,0 +1,36 @@
+<div id="specctn" class="good-spec-ctn">
+    <div class="good-baseinfo">
+        <img src="http://store.storeimages.cdn-apple.com/4973/as-images.apple.com/is/image/AppleInc/aos/published/images/m/ac/macbook/pro/macbook-pro-15-select-hero-201505?wid=267&hei=156&fmt=png-alpha&qlt=95&.v=xQ_kH1" class="img-responsive" alt="">
+        <div class="good-baseinfo-title">
+            <div class="good-title">{{item.title}}</div>
+            <div class="good-price">
+                <span class="currency">￥</span><span>{{item.price}}</span>
+            </div>
+            <div id="close-btn" class="close-btn">
+                <span class="fa fa-remove"></span>
+            </div>
+        </div>
+    </div>
+    <div class="spec-attr" v-for="property in item.property_options">
+        <p>{{property.key}}</p>
+        <span class="spec-item" v-for="option in property.values" v-bind:class="{ 'active':option.check}">
+            <span v-on:click="propertycheck(option,$parent.$index,$index)">{{option.value}}</span>
+        </span>
+    </div>
+    <div class="spec-num">
+        <span>数量</span>
+        <div class="number-generator">
+            <div class="number-generator-minus" v-on:click="numberminus">
+                -
+            </div>
+            <input class="mui-numbox-input" type="number" value="5" min="5" max="10000" v-model="item.count" v-on:change="numberchange">
+            <div class="number-generator-plus" v-on:click="numberplus">
+                +
+            </div>
+        </div>
+    </div>
+    <div class="spec-operate">
+        <div class="o-add2cart" v-on:click="add2cartconfirm">加入购物车</div>
+        <div class="o-buyit">立即购买</div>
+    </div>
+</div>

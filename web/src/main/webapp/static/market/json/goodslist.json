@@ -1,0 +1,140 @@
+[
+  {
+    "ware_id": "1",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台"
+    },
+    "title": "茱莉蔻美白护肤",
+    "main_picture": "1.jpg",
+    "pictures": ["1.jpg","3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+    "price": "12.50",
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大",
+            "check":false
+          },
+          {
+            "value": "蓝绿",
+            "check":false
+          }
+        ]
+      }
+    ],
+    "unitname": "个",
+    "count":1
+  },
+  {
+    "ware_id": "2",
+    "supplier": {
+      "id": 1,
+      "supplier_name": "天猫政企采购平台"
+    },
+    "title": "这是一个电风扇",
+    "main_picture": "2.jpg",
+    "pictures": ["2.jpg", "3.jpg"],
+    "price": "350.00",
+    "property_options": [
+      {
+        "key": "产品规格",
+        "values": [
+          {
+            "value": "大",
+            "check":false
+          },
+          {
+            "value": "蓝绿",
+            "check":false
+          }
+        ]
+      }
+    ],
+    "unitname": "个",
+    "count":1
+  },
+  {
+    "ware_id": "3",
+    "supplier": {
+      "id": 2,
+      "supplier_name": "内部供应商"
+    },
+    "title": "Apple macBook pro 苹果热销产品 超薄高配置笔记本电脑",
+    "price": "14550.00",
+    "property_options": [
+      {
+        "key": "交易方式",
+        "values": [
+          {
+            "value": "15寸",
+            "check":false
+          },
+          {
+            "value": "13.3寸",
+            "check":true
+          }
+        ]
+      }
+    ],
+    "main_picture": "3.jpg",
+    "unitname": "个",
+    "count": 1
+  },
+  {
+    "ware_id": "4",
+    "supplier": {
+      "id": 3,
+      "supplier_name": "天猫超市"
+    },
+    "title": "韩国风衬衣",
+    "price": "122.00",
+    "property_options": [
+      {
+        "key": "交易方式",
+        "values": [
+          {
+            "value": "13寸",
+            "check": false
+          },
+          {
+            "value": "13.3寸",
+            "check": true
+          }
+        ]
+      }
+    ],
+    "main_picture": "4.jpg",
+    "pictures": ["4.jpg", "7.jpg", "8.jpg"],
+    "unitname": "个",
+    "count": 1
+  },
+  {
+    "ware_id": "5",
+    "supplier": {
+      "id": 3,
+      "supplier_name": "天猫超市"
+    },
+    "title": "宝宝花王纸尿裤",
+    "price": "98.00",
+    "property_options": [
+      {
+        "key": "交易方式",
+        "values": [
+          {
+            "value": "15寸",
+            "check": false
+          },
+          {
+            "value": "13.3寸",
+            "check": true
+          }
+        ]
+      }
+    ],
+    "main_picture": "5.jpg",
+    "unitname": "个",
+    "count": 1
+  }
+]

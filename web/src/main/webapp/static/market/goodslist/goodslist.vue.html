@@ -1,0 +1,31 @@
+<div id="goodslist">
+    <div class="search-filter">
+        <!--<div class="search-filter-item"  v-bind:class="[active == 'price' ? 'active': '', asc ? 'asc': 'desc']">-->
+            <!--<span v-on:click="sort('price')">价格</span>-->
+            <!--<i class="fa fa-caret-up"></i> <i class="fa fa-caret-down"></i>-->
+        <!--</div>-->
+        <!--<div class="search-filter-item"  v-bind:class="[active == 'sales_volume' ? 'active': '', asc ? 'asc': 'desc']">-->
+            <!--<span v-on:click="sort('sales_volume')">销量</span>-->
+            <!--<i class="fa fa-caret-up"></i> <i class="fa fa-caret-down"></i>-->
+        <!--</div>-->
+        <!--<div class="search-filter-item">-->
+            <!--<span>筛选</span>-->
+            <!--<i class="fa fa-caret-up"></i> <i class="fa fa-caret-down"></i>-->
+        <!--</div>-->
+    </div>
+    <ul class="table-view good-list">
+        <li class="table-view-cell" v-for="item in items">
+            <!--<a href="#goods/goodsview?wareId={{item.ware_id}}" data-ignore="push">-->
+                <img class="media-object pull-left good-img responsive-img" src="../../goodsimg/{{item.YWM_PicName}}">
+
+                <div class="media-body">
+                    <div class="good-title"><span>产品名称：{{item.YWM_Name}}</span></div>
+                    <div class="good-brand"><span>产品品牌：{{item.YWM_Code}}</span></div>
+                    <div class="good-price"><span>产品描述：{{item.YWM_Kind}}</span></div>
+                    <div class="good-supplier">包装：{{item.YWM_Unit}}</div>
+                    <div v-on:click="add2cartconfirm($index)" wareid="{{item.ware_id}}" style="width:30%;height: 25px;background-color: inherit; float:right; font-size: small;padding: 5px 0px 0px 0px;color: red;" class="btn btn-negative btn-block">购买</div>
+                </div>
+            <!--</a>-->
+        </li>
+    </ul>
+</div>

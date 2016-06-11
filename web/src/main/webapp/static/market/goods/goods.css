@@ -1,0 +1,222 @@
+.good-detail .tab-left{
+    width: 13.5%;
+    border: solid 1px transparent;
+    background-color: #FAFAFA;
+    border-right-color: #F0F0F0;
+    position: relative;
+}
+.good-detail .tab-left .fa-shopping-cart:hover{
+
+}
+.good-detail .tab-left .icon{
+    font-size: 20px;
+}
+.good-detail .tab-right{
+    width: 36.5%;
+}
+.good-detail .tab-add2cart {
+    background-color: #FEBD2F;
+    color:#FFF;
+}
+.good-detail .tab-buyit{
+    background-color: #FF3C25;
+    color:#FFF;
+}
+.good-choose-mask{
+    display: none;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: 100%;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.good-choose-mask.active{
+    display: block;
+}
+.good-detail-ctn>div{
+    background-color: #FFF;
+    padding:0 10px;
+}
+.good-detail-ctn #coursel{
+    padding:0;
+}
+.good-spec-ctn{
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transform: translate3d(0, 112%, 0);
+    transform: translate3d(0, 112%, 0);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 12;
+    width: 100%;
+    color:#666;
+}
+.good-spec-ctn p{
+    color:#666;
+}
+.good-spec-ctn.active{
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+.good-detail-ctn .good-spec-choose {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color:#666;
+}
+.good-detail-ctn .good-spec-choose>div{
+    display: inline-block;
+
+}
+.good-detail-ctn .good-spec-choose::after,.good-baseinfo::after{
+    clear: both;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    display: block;
+}
+.good-detail-ctn .good-supplier{
+    margin-bottom: 15px;
+    color:#979797;
+    font-size: 13px;
+}
+.good-detail-ctn .good-select{
+    font-size: 20px;
+    line-height: 45px;
+}
+.spec-operate{
+    display: table;
+    width: 100%;
+}
+.spec-operate>div{
+    width: 50%;
+    display: table-cell;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color:#FFF;
+}
+.spec-operate .o-add2cart{
+    background-color: #FEBD2F;
+}
+.spec-operate .o-buyit{
+    background-color: #FF3C25;
+}
+.good-baseinfo>div{
+    display: block;
+    padding-left: 2.6533rem;
+    position: relative;
+    height: 1.9rem;
+    border-bottom: solid 1px #e5e5e5;
+}
+.good-baseinfo>img {
+    left: .2933rem;
+    position: absolute;
+    top: -.5333rem;
+    width: 2.16rem;
+    height: 2.16rem;
+}
+.good-baseinfo-title>div{
+    display: inline-block;
+    font-size: 13px;
+
+}
+.good-baseinfo-title .good-price{
+    font-size: 13px;
+    line-height: 15px;
+    color: #ff3c25;
+}
+.good-title{
+    width: 6.5rem;
+    height: 28px;
+    padding-top:11px;
+    line-height: 15px;
+}
+/*关闭按钮*/
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #b1b1b1;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 16px;
+    color: #b1b1b1;
+}
+.spec-attr{
+    border-bottom: solid 1px #E5E5E5;
+}
+.spec-attr,.spec-num{
+    padding: 8px;
+}
+.spec-attr .spec-item{
+    padding: 5px 12px;
+    background-color: #Eee;
+    border-radius: 2px;
+    border:solid 1px #eee;
+    margin-right: 10px;
+}
+.spec-attr .spec-item.active{
+    background-color: #FFF2F0;
+    border-color:#FF9D91;
+    color:#FF9D91;
+}
+.spec-num>span{
+    line-height: 35px;
+    font-size: 14px;
+}
+.number-generator{
+    float: right;
+    margin-right: 10px;
+    height: 32px;
+    border-radius: 0;
+    border: 1px solid #B2B2B2;
+    display: inline-block;
+    font-size: 12px;
+}
+.number-generator div{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 19px;
+}
+.number-generator input{
+    display: inline-block;
+    font-weight: 700;
+    border: 0;
+    border-left: 1px solid #B2B2B2;
+    border-right: 1px solid #B2B2B2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    color: #666666;
+    border-radius: 0;
+    padding-left:10px;
+}
+/*主信息区域*/
+.good-detail-ctn .good-titlename{
+    font-size: 14px;
+    color:#2e2e2e;
+    padding-top:11px;
+    line-height: 18px;
+}
+.good-detail-ctn .good-price{
+    font-size: 18px;
+    line-height: 25px;
+    color:#ff3c25;
+}
+.good-detail-ctn .good-price .currency{
+    font-size: 13px;
+}
