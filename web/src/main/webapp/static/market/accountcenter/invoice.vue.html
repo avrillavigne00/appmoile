@@ -1,0 +1,35 @@
+<ul class="table-view" id="invoicelist">
+    <table class="main-table">
+        <thead>
+        <tr>
+            <th width="15%">发票类型</th>
+            <th width="35%">公司名称</th>
+            <th width="35%">项目</th>
+            <th width="15%">操作</th>
+        </tr>
+        </thead>
+        <tbody v-for="item in items">
+        <tr>
+            <td>
+                <span>{{item.invoice_type}}</span>
+            </td>
+            <td>
+                <span>{{item.corporation}}</span>
+            </td>
+            <td>
+                <span>{{item.project_desc}}</span>
+            </td>
+            <td>
+                <a>编辑</a> <a>删除</a>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</ul>
+
+<div>
+    <a href="#accountcenter/invoice_edit">
+        <button style="width:33%; float:right" class="btn btn-negative btn-block">新增</button>
+    </a>
+</div>

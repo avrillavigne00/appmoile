@@ -1,0 +1,24 @@
+<%if(mainpage){%>
+  <h1 class="title">友云采</h1>
+<%}else{%>
+	<% if(leftAnchor){ %>
+    <a id="leftBtn" class="btn btn-link btn-nav pull-left" href="<%=leftHref%>" data-ignore="push" style="margin-top: -3px;">
+      <span class="icon icon-left-nav" style="font-size:14px;"><%=leftAnchor%></span>    
+    </a>
+  <%}%>
+  <% if(rightAnchor){ %>
+  <a id="rightAnchor" class="btn btn-link pull-right" style="font-size:14px"  data-ignore="push">
+     <%=rightAnchor%> 
+  </a> 
+  <%}%>
+  <% if(rightBtn){ %>
+  <button id="rightBtn" class="btn pull-right" style="font-size:14px" data-ignore="push">
+     <%=rightBtn%> 
+  </button> 
+  <%}%>
+  <% if(rightIcon){ %>
+      <span class="pull-right icon icon-search" style="font-size:14px"></span>
+  <%}%>
+  
+  <h2 class="title text2"><%=title%></h2>
+<%}%>

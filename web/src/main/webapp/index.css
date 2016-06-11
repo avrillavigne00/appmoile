@@ -1,0 +1,156 @@
+ul{
+    margin:0;
+    padding:0;
+}
+ul li {
+    list-style: none;
+}
+a{
+ text-decoration: none;
+}
+#indexsearch {
+    position: absolute;
+    z-index: 12;
+    width: 9.28rem;
+    margin: 10px .36rem;
+}
+#indexsearch div{
+    height: 30px;
+    margin-bottom: 0;
+    font-size: 14px;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 3px;
+    line-height: 30px;
+    color: #979798;
+    padding: 0 10px;
+}
+.quick-link-ctn{
+    padding:10px 0;
+    background-color: #FFF;
+}
+.index-navigator{
+    margin:0;
+    padding:0 ;
+    
+}
+.index-navigator li{
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+.index-navigator li div{
+    width: 1.2266rem;
+    height: 1.2266rem;
+    border-radius: 1.2266rem;
+    margin: 0 auto;
+    text-align: center;
+    color:#FFF;
+}
+.index-navigator li .index-category{
+    background-color: #4AA5FE;
+}
+.index-navigator li .index-order{
+    background-color: #FC6C01;
+}
+.index-navigator li .index-tmall{
+    background-color: #F44747;
+}
+.index-navigator li .index-account{
+    background-color: #B0DD42;
+}
+.index-navigator li .icon{
+    font-size: .6rem;
+    line-height: 1.2266rem;
+}
+.index-navigator li span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding-top:5px;
+    color:#5A5A5A;
+}
+
+/*分区域*/
+.divided {
+    position: relative;
+    text-align: center;
+    height: 26px;
+}
+.divided>div{
+    background-color: #EFEFF4;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    z-index: 10;
+    color: #999;
+    width: 54px;
+    margin-left: -27px;
+}
+.divided>hr {
+    width: 90px;
+    border-bottom: solid 1px #999;
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    margin-left: -45px;
+    z-index: 9;
+}
+/*最近浏览*/
+.recentview{
+    padding:8px 0;
+    background-color: #FFF;
+}
+.recentview li{
+    float: left;
+    width: 2rem;
+
+}
+.recentview li img{
+    width: 1.6266rem;
+    height: 1.6266rem;
+    margin: 0 .1788rem;
+    border-radius: 4px;
+}
+.recentview li p{
+    padding-left:.1788rem;
+    color:#FF3C25;
+    margin:6px 0 0 0;
+}
+.good-category{
+    background-color: #FFF;
+    margin-top:2px;
+}
+.good-category li{
+    float: left;
+    width: 3.333333rem;
+    height: 3.333333rem;
+    border:solid 1px #f3f3f3;
+    border-top:0;
+    border-left:0;
+
+}
+.good-category li img {
+    width: 2.1333rem;
+    height: 2.1333rem;
+    margin: 0 .6rem;
+}
+.good-category li p{
+    margin: 6px 0;
+    text-align: center;
+    color: #595959;
+    font-size: 15px;
+}
+.ci-count {
+    position: absolute;
+    top: 4px;
+    right: -1px;
+    display: inline-block;
+    padding: 1px 2px;
+    font-size: 6px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #c81623;
+    border-radius: 7px 7px 7px 0;
+    min-width: 12px;
+    text-align: center;
+}

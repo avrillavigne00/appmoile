@@ -1,0 +1,40 @@
+.index-navigator{
+    margin:0;
+    padding:0 ;
+
+}
+.index-navigator li{
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+.index-navigator li div{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    margin: 0 auto;
+    text-align: center;
+    color:#FFF;
+}
+.index-navigator li .index-category{
+    background-color: #4AA5FE;
+}
+.index-navigator li .index-order{
+    background-color: #FC6C01;
+}
+.index-navigator li .index-tmall{
+    background-color: #F44747;
+}
+.index-navigator li .index-account{
+    background-color: #B0DD42;
+}
+.index-navigator li .icon{
+    font-size: .65rem;
+    line-height: 1.25rem;
+}
+.index-navigator li span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding-top:5px;
+}

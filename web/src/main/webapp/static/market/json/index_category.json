@@ -1,0 +1,174 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "服装",
+    "main_picture": "c1.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "category_name": "手机",
+    "main_picture": "c2.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "美妆",
+    "main_picture": "c3.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "家居家装",
+    "main_picture": "c4.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "生鲜",
+    "main_picture": "c5.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "小家电",
+    "main_picture": "c6.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "运动户外",
+    "main_picture": "c7.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "c8.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "智能数码",
+    "main_picture": "c8.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "category_name": "个护清洁",
+    "main_picture": "c9.jpg",
+    "parent_category_id": -1,
+    "innercode": "0001",
+    "seq": 0.0,
+    "childs": [
+      {
+        "category_id": 2,
+        "category_name": "耗材",
+        "main_picture": "3.jpg",
+        "parent_category_id": 1,
+        "innercode": "00010001",
+        "seq": 0.0,
+        "childs": []
+      }
+    ]
+  }
+]
+
