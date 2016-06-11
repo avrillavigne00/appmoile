@@ -1,0 +1,41 @@
+
+<ul class="table-view" id="addresslist">
+    <table class="main-table">
+        <thead>
+        <tr>
+            <th width="15%">联系人</th>
+            <th width="15%">手机</th>
+            <th width="20%">地区</th>
+            <th width="35%">详细地址</th>
+            <th width="15%">操作</th>
+        </tr>
+        </thead>
+        <tbody  v-for="item in items">
+        <tr>
+            <td>
+                <span>{{item.person_name}}</span>
+            </td>
+            <td>
+                <span>{{item.phone_number}}</span>
+            </td>
+            <td>
+                <b>{{item.county_desc}}</b>
+            </td>
+            <td>
+                <span>{{item.detail_address}}</span>
+            </td>
+            <td>
+                <a>编辑</a> <a>删除</a>
+
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</ul>
+
+<div>
+    <a href="#accountcenter/address_edit">
+        <button style="width:33%; float:right" class="btn btn-negative btn-block">新增</button>
+    </a>
+</div>

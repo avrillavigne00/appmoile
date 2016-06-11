@@ -1,0 +1,80 @@
+
+<form id="addressview">
+
+    <table class="main-table">
+        <tr>
+            <td>
+                <label>收货公司</label>
+            </td>
+            <td>
+                <input type="text" placeholder="公司名称">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>收货人</label>
+            </td>
+            <td>
+                <input type="text" placeholder="收货人">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>手机</label>
+            </td>
+            <td>
+                <input type="text" placeholder="手机">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>省</label>
+            </td>
+            <td>
+
+                <select id="area_select"
+                        data-bind="options:provinces,optionsText:'ProName',optionsValue:'ProID',value:province_code,optionsCaption:'请选择'">
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>市</label>
+            </td>
+            <td>
+
+                <select id="city_select"
+                        data-bind="options:cities,optionsText:'CityName',optionsValue:'CityID',value:city_code,optionsCaption:'请选择'">
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>区</label>
+            </td>
+            <td>
+
+                <select id="district_select"
+                        data-bind="options:districts,optionsText:'DisName',optionsValue:'DisCode',value:county_code,optionsCaption:'请选择'">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>详细地址</label>
+            </td>
+            <td>
+                <input type="text" placeholder="详细地址">
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+<div>
+    <a href="#">
+        <button style="width:33%; float:right" class="btn btn-negative btn-block">保存</button>
+    </a>
+</div>

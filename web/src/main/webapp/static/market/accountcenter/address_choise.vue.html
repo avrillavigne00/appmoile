@@ -1,0 +1,16 @@
+<div id="main">
+    <ul class="table-view">
+        <li class="table-view-cell media" v-for="item in items">
+            <a class="navigate-right" href="javascript:;" @click="choise(item.id)">
+                <div class="media-body">
+                    {{item.person_name}}
+                    <p>{{item.phone_number}}</p>
+
+                    <p>{{item.county_desc}}</p>
+
+                    <p>{{item.detail_address}}</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
